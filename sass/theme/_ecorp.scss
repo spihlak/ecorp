@@ -1,0 +1,47 @@
+/*
+ * ECORP THEME STYLES
+ */
+
+body {
+  font-family: $theme_font;
+  font-size: $theme_font_size;
+}
+.navbar-light {
+  border-bottom:1px solid $e-gray;
+  .navbar-nav {
+    .nav-link:focus, .nav-link:hover, .active>.nav-link, .nav-link.active, .show>.nav-link, .nav-link.show  {
+      color: rgba($primary,1);
+    }
+  }
+}
+/*
+ * WOOCOMMERCE STYLES
+ */
+
+/* Cart */
+.ecorp-mini-cart {
+ display:block;
+ position:relative;
+ width:25px;
+ height:25px;
+ .lnr {
+   display:block;
+   font-size:1.375em;
+ }
+ .ecorp-product-counter {
+   display:block;
+   position:absolute;
+   top:-5px;
+   right:-5px;
+   text-align: center;
+   width:16px;
+   height:16px;
+   background-color:$primary;
+   border-radius: 50%;
+   line-height: 12px;
+   .count {
+     font-size:0.5em;
+     color:$white;
+   }
+ }
+};
